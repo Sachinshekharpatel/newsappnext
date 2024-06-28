@@ -5,8 +5,7 @@ import classes from "./MeetupItem.module.css";
 import { withRouter, useRouter } from "next/router";
 
 function MeetupItem(props) {
-
-  // const router = withRouter();
+  const router = useRouter();
   const showDetailsHandler = () => {
     console.log(props.id);
     router.push("/" + props.id);
