@@ -1,9 +1,10 @@
 import React from "react";
 import classes from "./meetupdetail.module.css";
+import Image from "next/image";
 const MeetupDetails = (props) => {
   return (
     <div className={classes.detail}>
-      <img src={props.image}></img>
+      <img height="200" width="200" src={props.image} alt={props.title} />
       <h1>{props.title}</h1>
       <address>{props.address}</address>
       <p>{props.description}</p>

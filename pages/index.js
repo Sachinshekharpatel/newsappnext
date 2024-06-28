@@ -1,4 +1,4 @@
-"use client";
+
 import React from "react";
 import MeetupList from "../components/meetups/MeetupList";
 
@@ -21,12 +21,20 @@ const DUMMY_MEETUPS = [
   },
 ];
 
-const HomePage = () => {
+const HomePage = (props) => {
   return (
     <>
-      <MeetupList meetups={DUMMY_MEETUPS} />
+      <MeetupList meetups={props.meetups} />
     </>
   );
 };
+
+export async function getServerSideProps(context) {
+  return {
+    props: {
+      meetups: DUMMY_MEETUPS,
+    },
+  };
+}
 
 export default HomePage;
