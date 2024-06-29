@@ -17,11 +17,9 @@ function MeetupItem(props) {
         <Card>
           <div className={classes.image}>
             <img
-              // Controls how the image is resized and cropped
-              height="200" // Sets the height of the image
-              width="200" // Sets the width of the image
-              src={props.image} // Specifies the image source dynamically from props
-              alt={props.title} // Provides alternative text for accessibility
+              
+            src={props.image} // Specifies the image source dynamically from props
+                alt={props.title} // Provides alternative text for accessibility
             />
           </div>
           <div className={classes.content}>
