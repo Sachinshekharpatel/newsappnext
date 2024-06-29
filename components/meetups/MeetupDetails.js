@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./meetupdetail.module.css";
-import Image from "next/image";
+
 const MeetupDetails = (props) => {
   return (
     <div className={classes.detail}>
